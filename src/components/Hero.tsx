@@ -29,13 +29,13 @@ const Hero = () => {
       mainTitle: "MODERN AFRICAN PRINTS",
       // price: "$15",
     },
-  ];
+  ] as any;
 
   return (
     <div>
       <div className="container pt-6 lg:pt-0">
         <Slider {...settings}>
-          {slideData.map((item) => (
+          {slideData.map((item: any) => (
             <Slide
               key={item.id}
               img={item.img}
